@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:food_delivery_app/data/data.dart';
+import 'package:food_delivery_app/widgets/recent_order.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({Key? key}) : super(key: key);
@@ -14,8 +15,8 @@ class _HomeScreenState extends State<HomeScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        leading:
-        IconButton(onPressed: () => {}, icon: const Icon(Icons.account_circle)),
+        leading: IconButton(
+            onPressed: () => {}, icon: const Icon(Icons.account_circle)),
         title: const Text("Food Delivery"),
         actions: [
           ElevatedButton(
@@ -52,7 +53,7 @@ class _HomeScreenState extends State<HomeScreen> {
                   )),
             ),
           ),
-
+          RecentOrder(),
         ],
       ),
     );
