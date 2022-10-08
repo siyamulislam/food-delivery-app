@@ -1,8 +1,7 @@
 
-// Food
-import 'package:food_delivary_app/models/food.dart';
-import 'package:food_delivary_app/models/restaurant.dart';
-import 'package:food_delivary_app/models/user.dart';
+import 'package:food_delivery_app/models/food.dart';
+import 'package:food_delivery_app/models/restaurant.dart';
+import 'package:food_delivery_app/models/user.dart';
 
 import '../models/order.dart';
 

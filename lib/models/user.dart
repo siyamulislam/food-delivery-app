@@ -1,4 +1,4 @@
-import 'package:food_delivary_app/models/order.dart';
+import 'package:food_delivery_app/models/order.dart';
 
 class User {
   final String name;
@@ -6,8 +6,8 @@ class User {
   final List<Order> cart;
 
   User({
-   required this.name,
-   required this.orders,
-   required this.cart,
+    required this.name,
+    required this.orders,
+    required this.cart,
   });
 }

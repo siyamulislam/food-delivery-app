@@ -1,4 +1,4 @@
-import 'package:food_delivary_app/models/food.dart';
+import 'package:food_delivery_app/models/food.dart';
 
 class Restaurant {
   final String imageUrl;
