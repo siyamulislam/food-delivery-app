@@ -16,7 +16,7 @@ class NearbyRestaurant extends StatelessWidget {
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         const Padding(
-          padding: EdgeInsets.symmetric(horizontal: 12.0, vertical: 5.0),
+          padding: EdgeInsets.symmetric(horizontal: 12.0, vertical: 8.0),
           child: Text(
             "Nearby Restaurants",
             style: TextStyle(
@@ -33,7 +33,7 @@ class NearbyRestaurant extends StatelessWidget {
     restaurants.forEach((Restaurant restaurant) {
       restaurantList.add(Container(
         height: 100,
-        margin: const EdgeInsets.all(12.0),
+        margin: const EdgeInsets.symmetric(horizontal: 12.0,vertical: 8),
         decoration: BoxDecoration(
             color: Colors.white,
             borderRadius: BorderRadius.circular(15.0),
