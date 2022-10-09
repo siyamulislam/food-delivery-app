@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:food_delivery_app/data/data.dart';
+import 'package:food_delivery_app/widgets/nearby_restaurant.dart';
 import 'package:food_delivery_app/widgets/recent_order.dart';
 
 class HomeScreen extends StatefulWidget {
@@ -33,6 +34,7 @@ class _HomeScreenState extends State<HomeScreen> {
             statusBarBrightness: Brightness.light),
       ),
       body: ListView(
+        // physics: BouncingScrollPhysics(),
         children: [
           Padding(
             padding: const EdgeInsets.all(12.0),
@@ -54,6 +56,7 @@ class _HomeScreenState extends State<HomeScreen> {
             ),
           ),
           RecentOrder(),
+          NearbyRestaurant(),
         ],
       ),
     );
