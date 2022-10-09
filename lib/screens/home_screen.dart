@@ -3,6 +3,7 @@ import 'package:flutter/services.dart';
 import 'package:food_delivery_app/data/data.dart';
 import 'package:food_delivery_app/widgets/nearby_restaurant.dart';
 import 'package:food_delivery_app/widgets/recent_order.dart';
+import 'package:flutter/services.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({Key? key}) : super(key: key);
@@ -14,6 +15,8 @@ class HomeScreen extends StatefulWidget {
 class _HomeScreenState extends State<HomeScreen> {
   @override
   Widget build(BuildContext context) {
+    SystemChrome.setSystemUIOverlayStyle(
+        SystemUiOverlayStyle(statusBarColor: Colors.transparent));
     return Scaffold(
       appBar: AppBar(
         leading: IconButton(
@@ -29,9 +32,9 @@ class _HomeScreenState extends State<HomeScreen> {
           )
         ],
         centerTitle: true,
-        systemOverlayStyle: const SystemUiOverlayStyle(
-            statusBarColor: Color.fromRGBO(236, 80, 30, 1.0),
-            statusBarBrightness: Brightness.light),
+        // systemOverlayStyle: const SystemUiOverlayStyle(
+        //     // statusBarColor: Color.fromRGBO(236, 80, 30, 1.0),
+        //     statusBarBrightness: Brightness.light),
       ),
       body: ListView(
         // physics: BouncingScrollPhysics(),
