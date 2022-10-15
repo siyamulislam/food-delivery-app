@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:food_delivery_app/data/data.dart';
+import 'package:food_delivery_app/screens/cart_screen.dart';
 import 'package:food_delivery_app/widgets/nearby_restaurant.dart';
 import 'package:food_delivery_app/widgets/recent_order.dart';
 import 'package:flutter/services.dart';
@@ -24,7 +25,9 @@ class _HomeScreenState extends State<HomeScreen> {
         title: const Text("Food Delivery"),
         actions: [
           ElevatedButton(
-            onPressed: () {},
+            onPressed: () {
+              Navigator.push(context, MaterialPageRoute(builder: (_)=>const CartScreen()));
+            },
             child: Text(
               'Cart(${currentUser.cart.length})',
               style: const TextStyle(fontSize: 20),
